@@ -10,7 +10,7 @@ After finishing to install radius server we will get this table in radius databa
 `mariadb[radius]> show tables;`
 
 | Tables_in_radius |
- ------------------
+|------------------|
 | nas              |
 | radacct          |
 | radcheck         |
