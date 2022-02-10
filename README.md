@@ -93,10 +93,10 @@ here 3 user's profile added.
 |  8 | alice    | User-Profile       | := | 1M_Profile   |
 |  9 | tom      | User-Profile       | := | 2M_Profile   |
 
-### radgroupch
+### radgroupcheck
 Identical to radcheck but indexed by group instead of user.
 
-`MariaDB [radius]> SELECT * FROM radcheck;`
+`MariaDB [radius]> SELECT * FROM radgroupcheck;`
 
 | id | groupname | attribute       | op | value |
 |----|-----------|-----------------|----|-------|
