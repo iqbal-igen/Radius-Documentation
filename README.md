@@ -288,5 +288,21 @@ create a pool
  for getting pool list 
   
  `[admin@MikroTik] > ip/pool/print`
+ 
+ add radius server in Mikrotik
+ 
+ `[admin@MikroTik] > /radius add service=hotspot,ppp address=10.0.0.3 secret=ex`
+ 
+ add pppoe client
+ 
+ `[admin@R1] > /interface pppoe-client
+add add-default-route=yes disabled=no interface=ether2 name=Client1 password=test user=test`
   
+ Create a new one or update the default ppp profile:
+
+`[admin@R2] > /ppp profile set [find name=default] remote-address=pool1 local-address=192.168.79.1`
+ 
+ Enable user authentication via RADIUS. If entry in local secret database is not found, then client will be authenticated via RADIUS
+
+`[admin@R2] > /ppp aaa set use-radius=yes`
   
