@@ -278,7 +278,7 @@ There's also a 'magic' Auth-Type, 'Accept', which skips the authenticate section
 ### Attribiutes and values list
 
 # Standard Attributes (defined in RFC 2865, 2866 and 2869)
-
+`
 ATTRIBUTE       User-Name                    1    string
 ATTRIBUTE       User-Password                2    string  encrypt=1
 ATTRIBUTE       Password                     2    string  encrypt=1
@@ -355,7 +355,7 @@ ATTRIBUTE       Delegate-Ipv6-Prefix         123  prefix6
 ATTRIBUTE       Framed-Ipv6-Address          168  addr6
 ATTRIBUTE       Dns-Server-Ipv6-Address      169  addr6
 ATTRIBUTE       Delegate-Ipv6-Pool           171  string
-
+`
 
 # FreeRADIUS internal attributes (they can not be transmitted via the RADIUS
 # protocol - they are used for internal purposes only)
