@@ -278,7 +278,7 @@ There's also a 'magic' Auth-Type, 'Accept', which skips the authenticate section
 ### Attribiutes and values list
 
 # Standard Attributes (defined in RFC 2865, 2866 and 2869)
-`
+|--------|------|-------------------|--------|
 ATTRIBUTE       User-Name                    1    string
 ATTRIBUTE       User-Password                2    string  encrypt=1
 ATTRIBUTE       Password                     2    string  encrypt=1
